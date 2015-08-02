@@ -7,21 +7,23 @@ When using flux you don't depend on the data in your templates to do the re-rend
 
 ###### trackCollection(yourCollection, yourActionCallback);
 
-```
+```javascript
 // watch collections on Minimongo cache and trigger action on change
 trackCollection(Meteor.users, CollectionActions.usersChanged);
 trackCollection(Posts, CollectionActions.postsChanged);
 ```
 
+<br>
 #### Watch the viewer's user object for changes
 
 ###### trackViewer(yourActionCallback);
 
 Use this to listen for changes on just the viewer's user object. If you want to listen to all users, use the helper above instead.
 
-```
-// watch the logged in user and trigger an action on change.
+```javascript
+// watch the logged in user and trigger an action on change
 trackViewer(CollectionActions.viewerChanged);
 ```
 
-Find yourself writing more boilerplate for flux: submit a PR!
+<br>
+Find yourself writing more boilerplate for flux? Open an issue!

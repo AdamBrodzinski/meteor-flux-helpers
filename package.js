@@ -9,6 +9,8 @@ Package.describe({
 Package.onUse(function(api) {
   api.versionsFrom('1.0');
   api.addFiles('flux-helpers.js');
+  api.export('trackViewer');
+  api.export('trackCollection');
 });
 
 Package.onTest(function(api) {

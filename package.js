@@ -1,5 +1,5 @@
 Package.describe({
-  name: 'flux-helpers',
+  name: 'skinnygeek1010:flux-helpers',
   version: '0.1.0',
   summary: 'Helpers to make flux easier to use with Meteor',
   git: 'https://github.com/AdamBrodzinski/meteor-flux-helpers.git',
@@ -15,6 +15,6 @@ Package.onUse(function(api) {
 
 Package.onTest(function(api) {
   api.use('tinytest');
-  api.use('flux-helpers');
+  api.use('skinnygeek1010:flux-helpers');
   api.addFiles('flux-helpers-tests.js');
 });

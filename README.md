@@ -25,5 +25,7 @@ Use this to listen for changes on just the viewer's user object. If you want to 
 trackViewer(CollectionActions.viewerChanged);
 ```
 
+Confused on how to use these to get your app working? Checkout the **[leaderboard flux example](https://github.com/AdamBrodzinski/meteor-flux-leaderboard)**
+
 <br>
 Find yourself writing more boilerplate for flux? Open an issue!

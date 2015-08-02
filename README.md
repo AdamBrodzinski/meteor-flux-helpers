@@ -2,6 +2,10 @@
 
 These helpers are designed to work with any flux implementation by allowing your action method to be passed in.
 
+### Installation 
+`meteor add skinnygeek1010:flux-helpers`
+
+<br>
 #### Watch a Collection for changes
 When using flux you don't depend on the data in your templates to do the re-rendering. This turns out to be good because it let's us have more control of re-renders. The dispatcher will batch up these changes for minimal rendering.
 

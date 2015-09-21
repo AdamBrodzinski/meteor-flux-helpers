@@ -8,6 +8,10 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.versionsFrom('1.0');
+  api.use([
+    'tracker',
+    'mongo'
+  ], 'client');
   api.addFiles('flux-helpers.js');
   api.export('trackViewer');
   api.export('trackCollection');

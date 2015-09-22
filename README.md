@@ -18,6 +18,17 @@ trackCollection(Posts, CollectionActions.postsChanged);
 ```
 
 <br>
+#### Watch a Collection Cursor for changes
+
+###### trackCollectionCursor(yourCollection.find(criteria), yourActionCallback);
+
+```javascript
+// watch specific collection cursors on Minimongo cache and trigger action on change
+trackCollectionCursor(Meteor.users.find({ foo: 'bar' }), CollectionActions.usersChanged);
+trackCollectionCursor(Posts.find({ foo: 'bar' }), CollectionActions.postsChanged);
+```
+
+<br>
 #### Watch the viewer's user object for changes
 
 ###### trackViewer(yourActionCallback);
